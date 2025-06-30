@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /Projeto_TCC/views/projetos/projeto/
+
+# Reescreve URLs do tipo /views/projetos/projeto/<slug> para projeto.php?slug=<slug>
+RewriteRule ^([\w\-]+)$ projeto.php?slug=$1 [L,QSA]
